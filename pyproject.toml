@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kab"
+dynamic = ["version"]
+description = "Antibody utilities built with nbdev"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "sky1ove", email = "lcai888666@gmail.com"}]
+keywords = ['nbdev']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/sky1ove/kab"
+Documentation = "https://sky1ove.github.io/kab/"
+
+[project.entry-points.nbdev]
+kab = "kab._modidx:d"
+
+[tool.setuptools.dynamic]
+version = {attr = "kab.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["kab"]
+
+[tool.nbdev]
+title = "kab"
+lib_path = "kab"

@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "kab"
+  site-url: "https://sky1ove.github.io/kab"
+  description: "Antibody utilities built with nbdev"
+  repo-branch: main
+  repo-url: "https://github.com/sky1ove/kab"

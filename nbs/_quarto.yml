@@ -1,0 +1,38 @@
+project:
+  type: website
+
+format:
+  html:
+    theme:
+      - cosmo
+      - custom.scss
+    css: styles.css
+    toc: true
+    keep-md: true
+  commonmark: default
+
+website:
+  twitter-card: true
+  open-graph: true
+  favicon: favicon.ico
+  repo-actions: [issue]
+  navbar:
+    background: primary
+    title: false
+    logo: logo.svg
+    left:
+      - text: Home
+        href: https://sky1ove.github.io/kab/
+    right:
+      - icon: github
+        href: https://github.com/sky1ove/kab
+    search: true
+  sidebar:
+    style: floating
+    contents:
+      - text: Get Started
+        href: index.ipynb
+      - section: Modules
+        contents: "*.ipynb"
+
+metadata-files: [nbdev.yml]
